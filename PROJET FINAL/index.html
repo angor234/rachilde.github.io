@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Accueil</title>
+    <style>
+        /* styles.css */
+       
+        body {
+            background-image: url(Bannière.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+    }
+
+    body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #007BFF;
+    color: #f6f8fa;
+    padding: 20px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+nav .logo {
+    margin-right: auto;
+}
+
+nav .logo img {
+    height: 80px;
+    width: 110px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    color: #000;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+    font-size: 20px;
+    z-index: 1002; /* Assure que les liens sont cliquables */
+}
+
+nav ul li a:hover {
+    color: #fff;
+    transform: translateY(-5px);
+}
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+            padding-top: 100px;
+        }
+        .text {
+            flex: 1;
+            padding: 20px;
+            color: rgb(8, 2, 59);
+            font-size: 22px;
+        }
+        .image {
+            flex: 0 0 auto;
+            margin-right: -120px;
+        }
+        .image img {
+            width: 800px;
+            height: 450px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #007BFF;
+            border: none;
+            border-radius: 5px;
+            text-align: center;
+            text-decoration: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .btn:hover {
+            background-color: #0056b3;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        main {
+            padding: 20px;
+            padding-top: 78px;
+            padding-bottom: 60px;
+        }
+        h2 {
+            color: #2B579A;
+            margin-bottom: 10px;
+        }
+        .projet img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        h3 {
+            color: #000102;
+        }
+        h1 {
+            font-family: 'Oswald', sans-serif;
+        }
+        footer {
+            background-color: #f8fafc;
+            color: rgb(24, 23, 23);
+            text-align: center;
+            padding: 10px 0;
+            width: 100%;
+        }
+        .newsletter {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #f8fafc;
+            padding: 20px;
+            border-top: 1px solid #ddd;
+        }
+        .newsletter p {
+            flex: 1;
+            margin: 0;
+            font-size: 18px;
+        }
+        .newsletter form {
+            display: flex;
+            flex: 1;
+            justify-content: flex-end;
+        }
+        .newsletter input[type="email"] {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px 0 0 5px;
+            width: 70%;
+            font-size: 16px;
+        }
+        .newsletter button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 0 5px 5px 0;
+            background-color: #007BFF;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .newsletter button:hover {
+            background-color: #0056b3;
+        }
+        .reseaux-sociaux {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .reseaux-sociaux p {
+            margin-bottom: 10px;
+            font-size: 30px;
+            color: #333;
+        }
+        .icones {
+            display: flex;
+            justify-content: center;
+        }
+        .icones a {
+            margin: 0 10px;
+            color: #007BFF;
+            text-decoration: none;
+            font-size: 36px;
+        }
+        .icones a:hover {
+            color: #0c2455;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="MON logo.png" alt="Logo">
+            </div>
+            <ul>
+                <li><a href="Accueil.html">Accueil</a></li>
+                <li><a href="A propos.html">À propos</a></li>
+                <li><a href="Compétences.html">Compétences</a></li>
+                <li><a href="Projets.html">Projets</a></li>
+                <li><a href="Expériences.html">Expériences professionnelles</a></li>
+                <li><a href="Blog.html">Blog</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <li><a href="Témoignages.html">Témoignages</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="container">
+                <div class="text">
+                    <h1>ANGOR RACHILDE NORA</h1> <br>
+                    <ul>
+                        <li><h3>Développeur Web-WordPress</h3></li>
+                        <li><h3>Ingénieur Télécommunications & Réseaux</h3></li>
+                    </ul><br>
+                    <br><a href="A propos.html" class="btn">En savoir plus</a>
+                </div>
+                <div class="image">
+                    <img src="photo2.png" alt="Image">
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="newsletter">
+            <p>Inscrivez-vous à ma newsletter</p>
+            <form>
+                <input type="email" placeholder="Votre email" required>
+                <button type="submit">S'inscrire</button>
+            </form>
+        </div>
+        <div class="reseaux-sociaux">
+            <h1>Me Suivre</h1>
+            <div class="icones">
+                <a href="https://www.youtube.com/" target="_blank" class="youtube">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="https://www.facebook.com/" target="_blank" class="facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.instagram.com/" target="_blank" class="instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+        <br><p>&copy; 2024, Nora Angor. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
